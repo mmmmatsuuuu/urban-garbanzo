@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fillust2021","\u002Fpictogram2021"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
