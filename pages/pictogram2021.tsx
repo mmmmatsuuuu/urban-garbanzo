@@ -1,7 +1,6 @@
 import { NextPage, GetStaticProps } from "next";
 import Layout from "../components/Layout";
 import { PictogramCard } from "../components/Card";
-import Pagenation from "../components/Pagenation";
 
 
 /** 
@@ -33,7 +32,7 @@ const PictogramPage:NextPage<PictProps> = ({shapedData}) => {
         >
             <div 
                 className="hero h-[500px]"
-                style={{ backgroundImage: "url(" + process.env.NEXT_PUBLIC_BASE_PATH + "/img/pictogram.png);" }}
+                style={{ backgroundImage: "url(" + process.env.NEXT_PUBLIC_BASE_PATH + "/img/pictogram.png)" }}
             >
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
@@ -56,12 +55,6 @@ const PictogramPage:NextPage<PictProps> = ({shapedData}) => {
                             />
                         )
                     })}
-                </div>
-                <div className="max-w-screen-xl m-auto py-4 flex justify-center">
-                    <Pagenation
-                        num={ 5 }
-                        active={ 1 }
-                    />
                 </div>
             </div>
         </Layout>
