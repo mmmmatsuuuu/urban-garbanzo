@@ -32,7 +32,7 @@ export const Card:React.FC<CardProps> = ({
         )
     }
     return (
-        <div className="card card-compact w-full bg-base-100 shadow-xl">
+        <div className="card card-compact w-full h-full bg-base-100 shadow-xl">
             <figure><img src={ image } alt={ alt } /></figure>
             <div className="card-body">
                 <h2 className="card-title">{ header }</h2>

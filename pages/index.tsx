@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         >
             <div 
                 className="hero h-[700px]"
-                style={{ backgroundImage: "url(" + process.env.NEXT_PUBLIC_BASE_PATH + "/img/hero-bg.jpeg);" }}
+                style={{ backgroundImage: "url(" + process.env.NEXT_PUBLIC_BASE_PATH + "/img/hero-bg.jpeg)" }}
             >
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
                         alt="card-image"
                         header="フリーイラスト2021"
                         paragraph='生徒が作成した発表のプレゼンなどいろいろな場所で活用できるフリーイラスト集。クリエイティブコモンズライセンスの範囲でご自由に使用してください。'
-                        link='/pictogram2021'
+                        link='/illust2021'
                         linkTitle='開く'
                     />
                     <Card 

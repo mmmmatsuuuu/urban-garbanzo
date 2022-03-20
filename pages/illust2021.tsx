@@ -22,8 +22,8 @@ type PictProps = {
 };
 
 const PictogramPage:NextPage<PictProps> = ({shapedData}) => {
-    const pageTitle = "ピクトグラム2021";
-    const description = "天草高校の問題を解決するために生徒が作ったピクトグラム集。クリエイティブコモンズライセンスの範囲でご自由に使用してください。";
+    const pageTitle = "イラスト2021";
+    const description = "天草高校の生徒が作ったイラスト集。クリエイティブコモンズライセンスの範囲でご自由に使用してください。";
 
     return (
         <Layout
@@ -32,7 +32,7 @@ const PictogramPage:NextPage<PictProps> = ({shapedData}) => {
         >
             <div 
                 className="hero h-[500px]"
-                style={{ backgroundImage: "url(" + process.env.NEXT_PUBLIC_BASE_PATH + "/img/pictogram.png);" }}
+                style={{ backgroundImage: "url(" + process.env.NEXT_PUBLIC_BASE_PATH + "/img/illust.webp)" }}
             >
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
@@ -65,7 +65,7 @@ export const getStaticProps:GetStaticProps = async() => {
     // 変数定義 ============================================
     // 
     // ====================================================
-    const URL:string = "https://script.google.com/macros/s/AKfycbzWI6_zEsqcqI4hlvuew3cDTukeA8Tt59kP45lPQiVUZ7mSTaBLa8tyTKcjwsCmM0Ah/exec";
+    const URL:string = "https://script.google.com/macros/s/AKfycbz0G1BnLc8HeIriBLJZhR-_r3u7MFTrNTgbLdQ8rlLLoOaedDDv8reW3sEKtF5vg_vS8w/exec";
     let response:any;                 // フェッチデータ
     let shapedData:Production[] = []; // 整形済みデータ
 
